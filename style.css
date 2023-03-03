@@ -1,6 +1,8 @@
 .header{
-    border: 1px solid blue;
-
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .body{
     border: 1px solid rgb(255, 0, 0);
@@ -16,4 +18,35 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
+    
+}
+
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-family: Sans-serif;
+    font-weight: 900;
+}
+
+.links{
+    font-family: Sans-serif;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header, .body, .footer{
+    padding: 8px 120px;
 }
