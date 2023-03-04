@@ -22,7 +22,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo{
@@ -56,13 +56,13 @@ a{
     padding: 80px 120px;
     display: flex;
     background-color: #1F2937;
+    justify-content: space-between;
 }
 
 .text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100%;
     width:50%;
 }
 
@@ -70,7 +70,7 @@ a{
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
-    font-family: sans-serif;
+    font-family: 'Roboto',sans-serif;
 }
 .secondary-text{
     font-size: 18px;
@@ -79,13 +79,13 @@ a{
 }
 
 .image{
-    height: 100%;
-    width:50%;
+    width: 400px;
     background-color: rgba(240, 248, 255, 0.493);
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white
+    color:white;
+    margin-left: 20px;
 }
 
 .hero, .information, .quote{
@@ -101,4 +101,39 @@ button{
     border: none;
     color: #F9FAF8;
     font-weight: bold;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: 800;
+    color:#1F2937;
+    border: #1F2937 solid;
+    padding:30px
+}
+.info-header{
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 150px;
+    width: 150px;
+    border:#3882f6 solid;
+    border-radius: 10%;
+}
+.information{
+    border: solid green;
+}
+.description{
+    font-weight: 400;
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
 }
