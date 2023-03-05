@@ -1,20 +1,12 @@
-.header{
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*OVERALL STRUCTURE*/
 
 .body{
     display: flex;
     flex-direction: column;
     flex:1
 }
-
-.footer{
-    
-}
-
 body{
     height: 100vh;
     display: flex;
@@ -23,14 +15,28 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+.hero, .information, .quote{
+    display: flex;
+    flex: 1;
+}
+.header, .footer{
+    padding: 8px 120px;
+}
 
+/*HEADER*/
+
+.header{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo{
     font-size: 24px;
     color: #F9FAF8;
     font-family: Sans-serif;
     font-weight: 900;
 }
-
 ul{
     display: flex;
     gap: 15px;
@@ -38,7 +44,6 @@ ul{
     padding: 0;
     list-style-type: none;
 }
-
 a{
     text-decoration: none;
     font-size: 18px;
@@ -47,9 +52,7 @@ a{
 
 }
 
-.header, .footer{
-    padding: 8px 120px;
-}
+/*HERO*/
 
 .hero{
     padding: 80px 120px;
@@ -57,14 +60,21 @@ a{
     background-color: #1F2937;
     justify-content: space-between;
 }
-
 .text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width:50%;
 }
-
+.image{
+    width: 400px;
+    background-color: rgba(240, 248, 255, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-left: 20px;
+}
 .main-text{
     font-size: 48px;
     font-weight: 900;
@@ -76,23 +86,7 @@ a{
     color: #E5E7EB;
     font-family: Sans-serif;
 }
-
-.image{
-    width: 400px;
-    background-color: rgba(240, 248, 255, 0.493);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    margin-left: 20px;
-}
-
-.hero, .information, .quote{
-    display: flex;
-    flex: 1;
-}
-
-button{
+.hero button{
     padding:5px 30px;
     margin-top: 10px;
     background-color: #3882f6;
@@ -101,6 +95,8 @@ button{
     color: #F9FAF8;
     font-weight: bold;
 }
+
+/*INFORMATION*/
 
 .information{
     display: flex;
@@ -132,12 +128,15 @@ button{
     width: 150px;
     text-align: center;
 }
+
+/*QUOTE*/
+
 .quote-section{
     padding: 80px 140px;
-   background-color: #e5e7eb; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    background-color: #e5e7eb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .quote-container{
@@ -156,6 +155,41 @@ button{
     align-self: end;
     font-weight: bolder;
 }
+.signup{
+    display: flex;
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 120px;
+}
+.signup-container{
+    
+    display: flex;
+    flex-grow: 1;
+    background-color: #3882f6;
+    color:#E5E7EB;
+    padding: 30px 80px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.signup-container p{
+    margin: 0;
+}
+.signup-container button{
+    border: #E5E7EB solid 2px;
+    padding:1px 40px;
+    color: #E5E7EB;
+    background-color: #3882f6;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.signup-container strong{
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
 .footer{
     min-height: 70px;
     color: #E5E7EB;
@@ -164,3 +198,4 @@ button{
     justify-content: center;
     align-items: center;
 }
+
